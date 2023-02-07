@@ -1,6 +1,7 @@
 import { useState } from "react";
 import BookEdit from './BookEdit';
 
+
 function BookShow({book , onDelete , onEdit}){
   const [showEdit , setShowEdit] = useState(false);
 
@@ -9,6 +10,7 @@ function BookShow({book , onDelete , onEdit}){
     setShowEdit(!showEdit)
   };
   
+  //event handler
   const handleSubmit = (id , newTitle) => { 
     setShowEdit(false);
     onEdit(id, newTitle);
