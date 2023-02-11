@@ -3,9 +3,9 @@ import BookCreate from './components/BookCreate';
 import BookList from './components/BookList';
 import BookContext from "./context/books";
 
+//
 function App() {
   const {fetchBooks} = useContext(BookContext);
-
   useEffect(() => {
     fetchBooks();
   } , []);
@@ -21,3 +21,10 @@ function App() {
 }
 
 export default App
+/*
+fb = [];
+fetchBooks()
+
+fb = [data];
+
+*/
